@@ -51,11 +51,7 @@ export default function Home({allPostsData}) {
           property="og:description"
           content="This is a sample blog made with Next.js"
         />
-         <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={addProductJsonLd()}
-          key="product-jsonld"
-        />
+      
         
       </Head>
       <section className={utilStyles.headingHd}>
