@@ -3,7 +3,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  zoom: 120%;
+  zoom: 110%;
 }
 }
 
@@ -19,11 +19,12 @@ body {
   }
 }
 
-
+main{
+  height:min-content;
+}
 
 * {
   box-sizing: border-box;
-  
 }
 
 @media screen and (min-width: 600px) {

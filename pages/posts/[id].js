@@ -107,7 +107,7 @@ export default function Post({ postData, allPostsData }) {
           ))}
         </ul>
         
-        <section>
+        
         <div className={utilStyles.rectangleBlog} ></div>
       <h3 className={utilStyles.headingBgBlog}>Blogipostaukset</h3>
       <ul className={utilStyles.list}>
@@ -121,7 +121,7 @@ export default function Post({ postData, allPostsData }) {
         </ul>
           <h1 className={utilStyles.headingBottomBlog}>Alaotsikko</h1>
           <p className={utilStyles.bottomLinkBlog}>Lorem ipsum</p>
-        </section>
+        
       </Layout>
 
       
