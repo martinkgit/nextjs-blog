@@ -22,6 +22,50 @@ export async function getStaticProps() {
   };
 }
 
+function addProductJsonLd() {
+  return {
+    __html: `{
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Executive Anvil",
+    "description": "Just some content to show that this can be done",
+    "sku": "0446310786",
+    "mpn": "925872",
+    "brand": {
+      "@type": "Brand",
+      "name": "ACME"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Fred Benson"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.4",
+      "reviewCount": "89"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://example.com/anvil",
+      "priceCurrency": "USD",
+      "price": "119.99",
+      "priceValidUntil": "2020-11-20",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+`,
+  };
+}
+
 
 
 
@@ -51,7 +95,11 @@ export default function Home({allPostsData}) {
           property="og:description"
           content="This is a sample blog made with Next.js"
         />
-      
+       <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addProductJsonLd()}
+          key="product-jsonld"
+        />
         
       </Head>
       <section className={utilStyles.headingHd}>
