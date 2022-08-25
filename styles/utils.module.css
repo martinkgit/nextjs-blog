@@ -316,16 +316,29 @@ border-radius: 9999px;
 }
 
 
-
+@media screen and (max-width: 600px) {
   .rectangle {
     position: relative;
-    width: 258.2%;
+    width: 200.2%;
     height: 176.75px;
     left: -80%;
     top: 34rem;
 
     background: #000000;
   }
+}
+
+@media screen and (min-width: 600px) {
+  .rectangle {
+    position: relative;
+    width: 268.2%;
+    height: 176.75px;
+    left: -90%;
+    top: 34rem;
+
+    background: #000000;
+  }
+}
 
   @media screen and (max-width: 600px) {
   .rectangleBlog {
@@ -342,7 +355,7 @@ border-radius: 9999px;
 @media screen and (min-width: 600px) {
     .rectangleBlog {
       position: relative;
-      width: 268.2%;
+      width: 258.2%;
       height: 176.75px;
       left: -85%;
       top: 7.66vw;
