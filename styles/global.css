@@ -3,7 +3,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  zoom: 110%;
+  zoom: 100%;
 }
 }
 
@@ -11,7 +11,7 @@ body {
 @media screen and (max-width: 600px) {
   html,
   body {
-  
+
     padding: 0;
     margin: 0;
     zoom: 160%;
@@ -19,8 +19,22 @@ body {
   }
 }
 
+@media screen and (min-width: 600px) {
+html{
+  min-width: 500px;
+  position: relative;
+  overflow: auto;
+}
+}
+
+@media screen and (max-width: 600px) {
+  html{
+    position: relative;
+  }
+  }
+
 main{
-  height:min-content;
+  height:auto;
 }
 
 * {

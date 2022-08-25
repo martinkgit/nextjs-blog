@@ -39,6 +39,7 @@ export default function Layout({ children, home, postsData }) {
               width={108}
               alt={name}
             />
+             
             
           </>
         ) : (
@@ -69,7 +70,7 @@ export default function Layout({ children, home, postsData }) {
           </>
         )}
       </header>
-      <main>{children}</main>
+     
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
@@ -77,8 +78,9 @@ export default function Layout({ children, home, postsData }) {
           </Link>
         </div>
         
+        
       )}
-      
+       <main>{children}</main>
     </div>
     
   );

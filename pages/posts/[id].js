@@ -53,7 +53,9 @@ export async function getStaticPaths() {
 export default function Post({ postData, allPostsData }) {
     return (
       <div className={utilStyles.containerBlog}>
+      
       <Layout>
+          <section>
         <div className= {utilStyles.containerImage}>
         <Image
                   priority
@@ -106,10 +108,11 @@ export default function Post({ postData, allPostsData }) {
           
           ))}
         </ul>
+        </section>
         
-        
-        <div className={utilStyles.rectangleBlog} ></div>
+        <div className={utilStyles.rectangleBlog} >
       <h3 className={utilStyles.headingBgBlog}>Blogipostaukset</h3>
+      <div className={utilStyles.bottomListContainerBlog}>
       <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li key={id} className={utilStyles.listBlog}>
@@ -119,9 +122,10 @@ export default function Post({ postData, allPostsData }) {
           </li>
           ))}
         </ul>
+        </div>
           <h1 className={utilStyles.headingBottomBlog}>Alaotsikko</h1>
           <p className={utilStyles.bottomLinkBlog}>Lorem ipsum</p>
-        
+          </div>
       </Layout>
 
       

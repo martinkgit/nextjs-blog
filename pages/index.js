@@ -139,9 +139,17 @@ export default function Home({allPostsData}) {
           
           ))}
         </ul>
+        
       </section>
-      <div className={utilStyles.rectangle} ></div>
+
+      
+
+     
+      <div className={utilStyles.rectangle} >
+     
+      
       <h3 className={utilStyles.headingBg}>Blogipostaukset</h3>
+      <div className={utilStyles.bottomListContainer}>
       <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li key={id} className={utilStyles.listHome}>
@@ -151,10 +159,12 @@ export default function Home({allPostsData}) {
           </li>
           ))}
         </ul>
-
-      <h1 className={utilStyles.headingBottom}>Alaotsikko</h1>
+        </div>
+        <h1 className={utilStyles.headingBottom}>Alaotsikko</h1>
       <p className={utilStyles.bottomLinkIndex}>Lorem ipsum</p>
+      </div>
     </Layout>
+       
   );
   
 }
