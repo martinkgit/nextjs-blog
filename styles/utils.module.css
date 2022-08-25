@@ -346,7 +346,7 @@ border-radius: 9999px;
     width: 180%;
     height: 176.75px;
     left: -20%;
-    top: 46.66vw;
+    top: 43.66vw;
 
     background: #000000;
   }
@@ -355,7 +355,7 @@ border-radius: 9999px;
 @media screen and (min-width: 600px) {
     .rectangleBlog {
       position: relative;
-      width: 258.2%;
+      width: 275.2%;
       height: 176.75px;
       left: -85%;
       top: 7.66vw;
