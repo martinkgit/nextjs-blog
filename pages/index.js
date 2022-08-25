@@ -112,7 +112,7 @@ export default function Home({allPostsData}) {
         <div className={utilStyles.line}></div>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Blogit</h2>
         <ul className={utilStyles.table}>
           {allPostsData.map(({ id, date, title }) => (
             

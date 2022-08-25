@@ -247,7 +247,7 @@ color: #000000;
     width: 100.85px;
     height: 23.91px;
     left: 40%;
-    top: 5vw;
+    top: 4vw;
 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -263,36 +263,36 @@ color: #000000;
 @media screen and (min-width: 600px) {
     .headingBgBlog{
       position: relative;
-    width: 100.85px;
-    height: 23.91px;
-    bottom: -20%;
-    left: 32%;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
+      width: 100.85px;
+      height: 23.91px;
+      bottom: -10%;
+      left: 32%;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
 
-    color: #FFFFFF;
+      color: #FFFFFF;
   
     }
   }
 
   .headingHd{
     position: absolute;
-width: 269.91px;
-height: 17.16px;
-left: 160.69px;
-top: 239.53px;
+    width: 269.91px;
+    height: 17.16px;
+    left: 160.69px;
+    top: 239.53px;
 
-font-family: 'Roboto', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
 
-color: #000000;
+    color: #000000;
 
 }
 
@@ -713,7 +713,7 @@ color: #FFFFFF;
 
   .bottomListContainerBlog{
     position: relative;
-  top:0;
+  top:20%;
   }
 
   
@@ -818,7 +818,7 @@ top: auto;
 
 .bottomListContainer{
   position: relative;
-  top: 15%;
+  top: 10%;
 }
 
 .listHome{
